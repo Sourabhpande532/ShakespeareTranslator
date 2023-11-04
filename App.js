@@ -1,13 +1,27 @@
 const translateBtn = document.querySelector("#translate-btn");
 const textTranslateBox = document.querySelector("#textTranslateBox");
 const showOutputMessage = document.querySelector("#ouput");
-showOutputMessage.innerText = "hey, what's up"
 
-translateBtn.addEventListener("click",()=>{
-    // alert("Ok clicked!")
-    // console.log(textTranslateBox.value)
-    showOutputMessage.innerText = "Absolutely Great!"
-})
+const serverApi = "	https://api.funtranslations.com/translate/shakespeare.json";
+const translateServerApi = (text) => {
+  return serverApi + "?" + "text=" + text;
+};
 
-const userInput = prompt("What's you'r nick name")
-alert("Hey, My nickname is " + userInput);
+function errorHandler(error) {
+  console.log("error occured " + error);
+  alert("something wrong with server try again after some time");
+}
+
+translateBtn.addEventListener("click", () => {
+  /* taking input via translate box */ 
+  const textInputQuerry = textTranslateBox.value;
+
+  /* processing input that took */
+  fetch(translateServerApi(textInputQuerry))
+    .then((res) => res.json())
+    .then((json) => {
+      let translate = json.contents.translated;
+      showOutputMessage.innerText = translate;
+    })
+    .catch(errorHandler);
+});
