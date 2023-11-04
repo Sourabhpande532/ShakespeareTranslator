@@ -1,7 +1,35 @@
+
+body{
+  background-color: #fb923c;
+}
 textarea {
   width: 80%;
   height: 20vh;
   display: block;
   padding: 1rem;
   margin: 1rem;
+}
+.header {
+  width: 100%;
+  height: 15vh;
+  padding: 2rem;
+  color: white;
+  background-color: #f87171;
+  text-align: center;
+}
+
+#output {
+  border: 1px solid black;
+  width: 80%;
+  height: 30vh;
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#translate-btn{
+  border-top-right-radius: 20px;
+  background-color: #a3e635;
+  margin-left: 20px;
+  color: white;
 }
