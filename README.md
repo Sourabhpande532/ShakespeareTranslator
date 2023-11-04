@@ -17,7 +17,7 @@ By sourabh pande
 ---
 
 
-[ <img src= "https://img.shields.io/badge/Go LiVE-1DA1F?style=for-the-badge&logo=&logoColor=white" />]() 
+[ <img src= "https://img.shields.io/badge/Go LiVE-1DA1F?style=for-the-badge&logo=&logoColor=white" />]https://shakespeare-translator-beta.vercel.app/) 
 
 
 ## ![website](./Images/shakespeare.png)
