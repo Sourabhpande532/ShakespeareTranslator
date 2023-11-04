@@ -1,4 +1,4 @@
-# Banana-speak
+# Shakespeare translator mini app
 By sourabh pande
 
  ![sourabh](https://img.shields.io/badge/sourabh--Pande-JS--Developer-green)
